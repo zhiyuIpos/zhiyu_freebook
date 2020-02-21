@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./mixin";
+@import "./transition";
+@import "./flapCard";
+@import "./home";
+$ratio: 375 / 10;
+// 定义一个方法，可以时间把数值转换成px，根据屏幕的变化，实现字体自适应
+@function px2rem($px){
+    @return $px / $ratio + rem;
+}

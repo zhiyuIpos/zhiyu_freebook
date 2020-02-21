@@ -1,0 +1,53 @@
+ // 这个&表示和title-wrapper是同级的意思
+// 进入之前
+.slide-down-enter,.slide-down-leave-to{
+    transform: translate3d(0, -100%, 0);
+}
+// 进入之后
+.slide-down-enter-to,.slide-down-leave,.slide-up-enter-to,.slide-up-leave{
+    transform: translate3d(0, 0, 0);
+}
+// 过程
+.slide-down-enter-active,.slide-down-leave-active,
+.slide-up-enter-active,.slide-up-leave-active,
+.slice-right-enter-active, .slide-right-leave-active,
+.popup-slide-up-enter-active, .popup-slide-leave-active,
+.title-move-enter-active,.title-move-leave-active,
+.hot-search-enter-active,hot-search-leave-active{
+    transition: all .3s linear;
+}
+// 下面的menu-wrapper进入之前
+.slide-up-enter,.slide-up-leave-to{
+    transform: translate3d(0,px2rem(138),0);
+}
+// 渐进渐出的效果
+.fade-enter,.fade-leave-to{
+    opacity:0;
+}
+.fade-enter-to , .fade-leave{
+    opacity:1;
+}
+.slide-right-enter, .slide-right--leave-to{
+    transform:translate3d(-100%,0,0);
+}
+
+.popup-slide-up-enter,popup-slide-up-leave-to{
+    transform:transilate3d(0,100%,0);
+    opacity:0;
+}
+.popup-slide-up-enter-to,popup-slide-up-leave,
+.title-move-enter-to,.title-move-leave,
+.hot-search-enter-to,hot-search-leave{
+    transform:transilate3d(0,0,0);
+    opacity:1;
+}
+
+.title-move-enter,title-move-leave-to{
+    transform:transilate3d(0,px2rem(10),0);
+    opacity:0;
+}
+// 搜索列表
+.hot-search-enter,hot-search-leave-to{
+    transform:transilate3d(0,px2rem(30),0);
+    opacity:0;
+}
