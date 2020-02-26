@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import Scroll from '@/components/common/Scroll'
 import HotSearch from '@/components/home/HotSearch'
+import Scroll from '@/components/common/Scroll'
 import {storeHomeMixin} from '@/utils/mixin'
 export default {
     mixins:[storeHomeMixin],
@@ -121,8 +121,8 @@ export default {
         }
     },
     components:{
-        Scroll,
-        HotSearch
+        HotSearch,
+        Scroll
     },
     methods:{
         onScroll(offsetY){

@@ -16,10 +16,10 @@
 
 <script>
 import { storeShelfMixin } from '../../utils/mixin'
+import { gotoStoreHome } from  '../../utils/store'
 import ShelfItemBook from './ShelfItemBook'
 import ShelfItemCategory from './ShelfItemCategory'
 import ShelfAdd from './ShelfAdd'
-import {gotoStoreHome} from  '../../utils/store'
 export default {
     mixins:[storeShelfMixin],
     props:{
@@ -72,8 +72,8 @@ export default {
     }
 }
 </script>
-<style lang='scss' rel="stylesheet/scss" scoped>
-@import '../../assets/styles/global';
+<style lang='scss' scoped>
+@import "../../assets/styles/global";
 .shelf-item{
     position: relative;
     height: 100%;

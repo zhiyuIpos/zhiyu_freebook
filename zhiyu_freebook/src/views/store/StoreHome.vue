@@ -34,25 +34,25 @@
 <script type="text/ecmascript-6">
   import FlapCard from '@/components/home/FlapCard'
   import SearchBar from '@/components/home/SearchBar'
+  import Category from '@/components/home/Category'
+  import CategoryBook from '@/components/home/CategoryBook'
   import GuessYouLike from '@/components/home/GuessYouLike'
   import Recommend from '@/components/home/Recommend'
-  import Featured from '@/components/home/Featured'
-  import CategoryBook from '@/components/home/CategoryBook'
-  import Category from '@/components/home/Category'
   import Scroll from '@/components/common/Scroll'
+  import Featured from '@/components/home/Featured'
   import {storeHomeMixin} from '@/utils/mixin'
   import { home } from '@/api/store'
   export default {
     mixins:[storeHomeMixin],
     components: {
-      Category,
-      CategoryBook,
-      Featured,
       FlapCard,
       SearchBar,
+      Category,
+      CategoryBook,
       GuessYouLike,
       Recommend,
-      Scroll
+      Scroll,
+      Featured,
     },
     data() {
       return {

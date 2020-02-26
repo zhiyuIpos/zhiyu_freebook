@@ -10,7 +10,9 @@
 // const flatListData = require('./src/mock/bookFlatList')
 
 module.exports={
-    publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+    publicPath: process.env.NODE_ENV === 
+    'production' ? './' 
+    : '/',
     devServer:{
         // before(app){
         //     console.log(homeData)

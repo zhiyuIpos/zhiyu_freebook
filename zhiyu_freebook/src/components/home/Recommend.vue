@@ -19,7 +19,6 @@
 <script type="text/ecmascript-6">
   import TitleView from '@/components/home/Title'
   import { ebookHome ,storeHomeMixin} from '../../utils/mixin'
-
   export default {
     mixins: [ebookHome,storeHomeMixin],
     components: {

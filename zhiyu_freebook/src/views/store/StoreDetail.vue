@@ -91,8 +91,8 @@
     mixins:[storeShelfMixin],
     components: {
       DetailTitle,
-      Scroll,
       BookInfo,
+      Scroll,
       Toast
     },
     computed: {

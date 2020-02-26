@@ -53,7 +53,7 @@ export default {
     }
 }
 </script>
-<style lang='scss' scoped>
+<style lang='scss' rel="stylesheet/scss" scoped>
 @import '../../assets/styles/global';
 .toast-bg-wrapper{
     position: absolute;

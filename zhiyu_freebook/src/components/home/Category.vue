@@ -25,7 +25,6 @@
 <script type="text/ecmascript-6">
   import TitleView from '@/components/home/Title'
   import { categoryText, getCategoryName } from '@/utils/store'
-
   export default {
     components: {
       TitleView

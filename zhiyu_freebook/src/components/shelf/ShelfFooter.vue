@@ -21,9 +21,9 @@
 
 <script type="text/ecmascript-6">
   import { storeShelfMixin } from '../../utils/mixin'
+  import { download } from '../../api/store'
   import { saveBookShelf, removeLocalStorage} from '../../utils/localStorage'
-  import {removeLocalForage } from '@/utils/localForage'
- import {download} from '../../api/store'
+  import { removeLocalForage } from '../../utils/localForage'
   export default {
     mixins:[storeShelfMixin],
     props: {
@@ -283,8 +283,9 @@
   }
 </script>
 
-<style lang="scss" rel="stylesheet/scss" scoped>
+<style lang="scss" scoped>
   @import "../../assets/styles/global";
+
   .shelf-footer {
     position: fixed;
     bottom: 0;

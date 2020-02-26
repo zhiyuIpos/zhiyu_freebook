@@ -46,8 +46,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import { realPx } from '@/utils/utils'
   import HotSearchList from '@/components/home/HotSearchList'
+  import { realPx } from '@/utils/utils'
   import {storeHomeMixin} from '../../utils/mixin'
   export default {
     mixins:[storeHomeMixin],

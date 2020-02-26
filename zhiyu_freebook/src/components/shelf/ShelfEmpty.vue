@@ -16,7 +16,6 @@
 </template>
 <script>
   import { realPx } from '@/utils/utils'
-
   export default {
     data() {
       return {
@@ -37,7 +36,7 @@
   }
 </script>
 
-<style lang="scss" rel="stylesheet/scss" scoped>
+<style lang="scss" scoped>
   @import "../../assets/styles/global";
 
   .book-shelf-empty-wrapper {

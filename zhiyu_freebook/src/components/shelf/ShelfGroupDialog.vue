@@ -36,11 +36,10 @@
 </template>
 
 <script>
-  import EbookDialog from '../common/Dialog'
   import { storeShelfMixin } from '../../utils/mixin'
   import { removeAddFromShelf, appendAddToShelf, computeId } from '../../utils/store'
   import { saveBookShelf } from '../../utils/localStorage'
-
+  import EbookDialog from '../common/Dialog'
   export default {
     name: 'group-dialog',
     mixins: [storeShelfMixin],

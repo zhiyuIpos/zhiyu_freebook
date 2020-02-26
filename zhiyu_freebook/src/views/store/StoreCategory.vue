@@ -18,21 +18,21 @@
 </template>
 
 <script>
-  import ShelfTitle from '@/components/shelf/ShelfTitle'
-  import Scroll from '@/components/common/Scroll'
-  import ShelfFooter from '@/components/shelf/ShelfFooter'
-  import Toast from '@/components/common/Toast'
-  import ShelfList from '@/components/shelf/ShelfList'
   import {storeShelfMixin} from '@/utils/mixin'
+  import ShelfTitle from '@/components/shelf/ShelfTitle'
+  import ShelfList from '@/components/shelf/ShelfList'
+  import ShelfFooter from '@/components/shelf/ShelfFooter'
+  import Scroll from '@/components/common/Scroll'
+  import Toast from '@/components/common/Toast'
   import Epub from 'epubjs'
   global.ePub = Epub
   export default {
     mixins:[storeShelfMixin],
     components: {
       ShelfTitle,
-      Scroll,
       ShelfList,
       ShelfFooter,
+      Scroll,
       Toast
     },
     computed: {

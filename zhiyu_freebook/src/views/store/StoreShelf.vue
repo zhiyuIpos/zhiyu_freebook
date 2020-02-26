@@ -11,7 +11,6 @@
       <shelf-search ref="shelfSearch"></shelf-search>
       <shelf-list :data="shelfList"></shelf-list>
     </scroll>
-    <!-- <shelf-empty v-if="isEmpty"></shelf-empty> -->
     <shelf-footer></shelf-footer>
   </div>
 </template>
@@ -20,9 +19,8 @@
     import ShelfTitle from '@/components/shelf/ShelfTitle'
     import ShelfSearch from '@/components/shelf/ShelfSearch'
     import ShelfList from '@/components/shelf/ShelfList'
-    import Scroll from '@/components/common/Scroll'
     import ShelfFooter from '@/components/shelf/ShelfFooter'
-    // import ShelfEmpty from '@/components/shelf/ShelfEmpty'
+    import Scroll from '@/components/common/Scroll'
     import { storeShelfMixin} from '@/utils/mixin'
   export default {
     mixins:[storeShelfMixin],
@@ -30,8 +28,8 @@
       ShelfTitle,
       ShelfSearch,
       ShelfList,
-      Scroll,
       ShelfFooter,
+      Scroll
     },
     watch:{
       isEditMode(isEditMode){

@@ -16,10 +16,8 @@
 </template>
 <script>
 import { storeShelfMixin } from '@/utils/mixin'
+import {realPx,px2rem } from '@/utils/utils'
 import ShelfItem from './ShelfItem'
-import {realPx } from '@/utils/utils'
-// import { getBookShelf } from '../../utils/localStorage'
-import { px2rem } from '../../utils/utils'
 export default {
     mixins:[storeShelfMixin],
     props:{
@@ -49,8 +47,8 @@ export default {
     }
 }
 </script>
-<style lang='scss' rel="stylesheet/scss" scoped>
-@import '../../assets/styles/global';
+<style lang="scss" scoped>
+@import "../../assets/styles/global";
 .shelf-list{
     position: absolute;
     left:0;
