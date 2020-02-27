@@ -8,9 +8,9 @@ app.use(cors())
 
 function connect(){
     return mysql.createConnection({
-        host:'localhost',
-        user:'root',
-        password:'',
+        host:constant.dbHost,
+        user:constant.dbUser,
+        password:constant.dbPwd,
         database:'book'
     })
 }
@@ -344,6 +344,5 @@ app.get('/book/detail', (req, res) => {
 const server = app.listen(3000,()=>{
     const host = server.address().address
     const port = server.address().port
-
-    console.log('server is listening at http://ffsfs')
+    console.log('server is listening at http://%s:%s',host,port)
 })
